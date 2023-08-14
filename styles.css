@@ -139,6 +139,7 @@ a:hover {
 
 .read {
   margin: 1rem 0 1rem 0;
+  background-color: var(--white);
 }
 
 .notif-info {
