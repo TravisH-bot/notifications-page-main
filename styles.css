@@ -193,6 +193,10 @@ a:hover {
   background-color: var(--light-grayish-blue-1);
 }
 
+.attribution {
+  margin-top: 3rem;
+}
+
 /* =========================== Media Queries =========================== */
 
 @media screen and (max-width: 768px) {
@@ -230,5 +234,11 @@ a:hover {
 
   .comment-container {
     width: 100%;
+  }
+
+  .attribution {
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    text-align: center;
   }
 }
