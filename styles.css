@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+}
+
+:root {
+  /* Font - 500, 800 */
+  --font: "Plus Jakarta Sans", sans-serif;
+
+  /* Primary COlors */
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+
+  /* Neutral Colors */
+  --white: hsl(0, 0%, 100%);
+  --very-light-grayish-blue: hsl(210, 60%, 98%);
+  --light-grayish-blue-1: hsl(211, 68%, 94%);
+  --light-grayish-blue-2: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --dark-grayish-blue: hsl(219, 12%, 42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
+}
+
+body {
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--very-light-grayish-blue);
+}
+
+/* =========================== Main Container =========================== */
+
+.main-container {
+  background-color: var(--white);
+  width: 38%;
+  padding: 2rem 2rem 0rem 2rem;
+  border-radius: 0.8rem;
+}
+
+/* =========================== Header =========================== */
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.notification-header p {
+  color: var(--dark-grayish-blue);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.num {
+  display: flex;
+  width: 2rem;
+  height: 1.5rem;
+  border-radius: 0.3rem;
+  margin-left: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+#mark {
+  cursor: pointer;
+}
+
+#mark:hover {
+  color: var(--blue);
+}
+
+/* =========================== Notifications Container =========================== */
+
+.notification {
+  display: flex;
+  height: 4.4rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+a:hover {
+  color: var(--blue);
+}
+
+.notification:last-child {
+  margin: 0rem;
+}
+
+.note {
+  color: var(--dark-grayish-blue);
+}
+
+.name {
+  color: var(--very-dark-blue);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.name:hover {
+  color: var(--blue);
+}
+
+.club {
+  cursor: pointer;
+  color: var(--blue);
+  font-weight: 800;
+}
+
+.react {
+  color: var(--dark-grayish-blue);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.react:hover {
+  color: var(--blue);
+}
+
+.unread {
+  background-color: var(--very-light-grayish-blue);
+}
+
+.read {
+  margin: 1rem 0 1rem 0;
+}
+
+.notif-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-stamp {
+  color: var(--dark-grayish-blue);
+}
+
+.profile-pic {
+  width: 2.6rem;
+  height: 2.6rem;
+  margin-right: 1rem;
+}
+
+.comment-container {
+  width: 157%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+}
+
+#chess {
+  width: 2.6rem;
+  height: 2.6rem;
+  cursor: pointer;
+}
+
+.private-msg {
+  display: flex;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.private-msg .message {
+  border: 0.1rem solid var(--light-grayish-blue-2);
+  padding: 1rem;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  color: var(--dark-grayish-blue);
+}
+
+.private-msg .message:hover {
+  background-color: var(--light-grayish-blue-1);
+}
+
+/* =========================== Media Queries =========================== */
+
+@media screen and (max-width: 768px) {
+  body {
+    height: 60rem;
+  }
+
+  /* =========================== Main Container =========================== */
+  .main-container {
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  /* =========================== Header =========================== */
+  .notification-header h1 {
+    font-size: 1.3rem;
+  }
+
+  /* =========================== Notifications Container =========================== */
+  .notification {
+    height: 5rem;
+  }
+
+  .note {
+    font-size: 0.9rem;
+  }
+
+  .time-stamp {
+    font-size: 0.9rem;
+  }
+
+  .private-msg .message {
+    font-size: 0.9rem;
+  }
+
+  .comment-container {
+    width: 100%;
+  }
+}
